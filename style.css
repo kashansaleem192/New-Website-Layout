@@ -5,19 +5,23 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+/* header start  */
+.navbarheader {
+    width: 100%;
+}
+.container {
+    width: 68%;
+    margin: 2% 18% 5% 18%;
+}
 
 ul {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: baseline;
     column-gap: 20px;
     list-style: none;
     font-size: 20px;
-
-}
-
-img {
-    width: 250px;
 }
 
 select {
@@ -34,10 +38,50 @@ li:hover {
     cursor: pointer;
 }
 
-div { display: flex;
+.Navbar {
+    display: flex;
+    flex-wrap: wrap;
     position: absolute;
-    left: 250px;
+    left: 340px;
     top: 30px;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin: 2% auto;
+    }
+
+    ul {
+        justify-content: space-between;
+        font-size: 16px;
+    }
+
+    .Navbar {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    select {
+        width: 100px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    ul {
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 10px;
+    }
+}
+
+/* header end  */
+
+/* introduction start */
+img {
+    width: 250px;
 }
 
 .image {
@@ -45,9 +89,195 @@ div { display: flex;
     padding-right: 10px;
 }
 
-h1 { color:  #006838;}
-.section-1{ position: absolute;
-top: 200px;
+.left-content {
+    width: 50%;
 }
-.section-1>p{ display: flex;
-justify-content: center;}
+
+.right-content {
+    width: 50%;
+}
+
+.inner-content {
+    display: flex;
+}
+
+.introduction {
+    font-size: 35px;
+    color: #006838;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    padding: 5px;
+}
+
+.introduction-image {
+    width: 500px;
+}
+
+.paragraph {
+    color: gray;
+    line-height: 1.625;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .inner-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .left-content, .right-content {
+        width: 100%;
+    }
+
+    .introduction-image {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .introduction {
+        font-size: 25px;
+    }
+
+    .paragraph {
+        font-size: 14px;
+    }
+}
+
+/* introduction end */
+
+/* Mission section */
+.mission {
+    display: flex;
+    width: 100%;
+    margin-top: 300px;
+}
+
+.visionleftimage {
+    width: 500px;
+}
+
+@media only screen and (max-width: 768px) {
+    .mission {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .visionleftimage {
+        width: 100%;
+    }
+}
+
+/* Founder section */
+.founder-section {
+    width: 100%;
+    margin-top: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.founder-image {
+    width: 200px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.founder-content {
+    width: 100%;
+}
+
+.founder-name {
+    color: #006838;
+    font-size: 50px;
+    text-align: center;
+}
+
+.image-underline {
+    width: 1%;
+    background-color: gray;
+    height: 1%;
+}
+
+.color {
+    color: grey;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.invertidcoma {
+    margin-top: 30px;
+    width: 37px;
+    opacity: 0.2;
+}
+
+.founder-Intro {
+    color: gray;
+    line-height: 1.625;
+    width: 630px;
+    height: auto;
+    font-size: 18px;
+    margin: 30px auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .founder-Intro {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    .founder-name {
+        font-size: 30px;
+    }
+}
+
+/* Cards Section */
+.cards-section {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.development-card {
+    padding: 10px;
+    text-align: center;
+    width: 350px;
+}
+
+.development-image {
+    border-radius: 10px;
+    width: 300px;
+    height: 250px;
+}
+
+.development-text {
+    width: 80%;
+    text-align: center;
+    padding-left: 15px;
+    margin: 20px;
+    font-size: 20px;
+}
+
+.development-card:hover {
+    box-shadow: 10px 10px 40px gray;
+    border-radius: 20px;
+}
+
+/* Media query for cards */
+@media only screen and (max-width: 768px) {
+    .development-card {
+        width: 90%;
+    }
+
+    .development-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .development-text {
+        font-size: 16px;
+    }
+}
