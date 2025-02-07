@@ -1,191 +1,305 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jawan Pakistan</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-    <!-- Navbar start -->
-    <header class="navbarheader">
-        <div class="container">
-            <ul>
-                <li class="image"><img src="https://jawan-tech.web.app/landscape_logo.png" alt=""></li>
-                <li class="Home"> Home</li>
-                <li>About us</li>
-                <li class="Trainings"> Trainings <select>
-                        <option></option>
-                        <option> Web And Mobile Application Development</option>
-                        <option> Fluttter Application Development</option>
-                        <option>
-                            Graphic Design and Video Editing</option>
-                        <option> Digital and Social Media Marketing</option>
-                        <option> Blockchain Development</option>
-                    </select></li>
-                <li>Contact Us</li>
-            </ul>
-        </div>
+    <header>
+        <nav class="navbar navbar-expand-lg text-light -tertiary">
+            <div class="container navbar-1">
+                <a class="navbar-brand text-light  logo text-uppercase" href="#">LuxuryHotel</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav nav-bar ">
+                        <li class="nav-item">
+                            <a class="nav-link home-link text-light active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Rooms
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Room Videos</a></li>
+                                <li><a class="dropdown-item" href="#">Presidential Rooms</a></li>
+                                <li><a class="dropdown-item" href="#">Luxury Rooms</a></li>
+                                <li><a class="dropdown-item" href="#">Deluxe Rooms</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link border border-light  border-2" href="#">Book Now</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <!-- Navbar end -->
+
+    <section class="banner">
+        <div class="container"></div>
+        <div class="row">
+            <div class="col-12 text-center main-heading">
+                <h1> Welcome To Our Luxury Rooms</h1>
+                <h3>Discover our world's #1 Luxury Room For VIP.</h3>
+                <p class="btn rounded-0 book-now-btn border-0 text-uppercase fw-bold">Book Now</p>
+            </div>
+        </div>
+        </div>
+    </section>
     <section>
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-4 ">
+                    <div class="p-5 left-content">
+                        <h4 class="Stay-room-h4 text-center">Stay with our luxury rooms </h4>
+                        <h2 class="stay-enjoy-h2 text-center">Stay and Enjoy</h2>
+                        <p class=" stay-p text-center mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Minus illo similique natus, a
+                            recusandae? Dolorum, unde a quibusdam est? Corporis deleniti obcaecati quibusdam inventore
+                            fuga eveniet! Qui delectus tempore amet!</p>
+
+                        <p class="btn rounded-0 text-uppercase ms-5 more-about-btn">More About Us</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class=" col-lg-7  ">
+                    <div class="right-content"><img src="./f_img_1.png" alt=""> </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="featured-rooms pb-5">
+        <section class=" mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="mt-5">
+                            <h4 class="Stay-room-h4 text-center">Our Luxury Rooms</h4>
+                            <h2 class="stay-enjoy-h2 text-center">Featured Rooms</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class=" col-lg-6">
+                        <div>
+                            <div class="card card-1 border-0 rounded-0">
+                                <div class="featured-rooms-image-1">
+                                    <img src="./img_1.jpg" class="card-img rounded-0  card-img-top" alt="...">
+                                </div>
+                                <div class="card-body p-5">
+                                    <h3 class="card-title">Presidential Room</h3>
+
+                                    <p class=" icons my-4"> <i class="fa-solid fa-users-line guest-icon me-3"></i>
+                                        2 Guests <i class="fa-sharp fa-solid fa-crop-simple guest-icon ms-3 me-3 "></i>
+                                        22 ft 2</p>
+                                    <p class="card-text">Nulla vel metus scelerisque ante sollicitudin. Fusce
+                                        condimentum
+                                        nunc ac nisi vulputate fringilla.</p>
+                                    <a href="#" class="btn btn-primary px-4 py-3 book-now-btn-2 border-0 rounded-0">BOOK
+                                        NOW FROM
+                                        20$</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-6">
+
+                        <div class="featured-rooms-image-box-2 mt-1 mb-1">
+                            <div class="featured-rooms--image-box-1"><img class="featured-rooms-image mb-4"
+                                    src="./img_2.jpg" alt="">
+                                <div class="overlap-text">
+                                    <span class="text-uppercase">
+                                        Hotel Room
+                                        <span class="ion-ios-star"></span>
+                                        <span class="ion-ios-star"></span>
+                                        <span class="ion-ios-star"></span>
+                                    </span>
+                                    <span class="pricing-from  btn btn-warning text-light ">
+                                        from $22
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="featured-rooms--image-box-1 mt-1"> <img class="featured-rooms-image "
+                                    src="./img_4.jpg" alt="">
+                                <div class="overlap-text-2">
+                                    <span class="text-uppercase">
+                                        Hotel Room
+                                        <span class="ion-ios-star"></span>
+                                        <span class="ion-ios-star"></span>
+                                        <span class="ion-ios-star"></span>
+                                    </span>
+                                    <span class="pricing-from btn btn-warning text-light">
+                                        from $22
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-5">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12">
+                        
+                        <div class="image-fixed  ">
+                            <div  class="image-background ">
+
+                            </div>
+
+                        </div>
+                        <div class="caption">
+                            <h1 class="caption-h1">Relax and Enjoy your Holiday</h1>
+                            <p class=" fs-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto quidem
+                                tempore <br>
+                                expedita facere facilis, dolores!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <section>
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="mt-5">
+                        <h4 class="Stay-room-h4 text-center">Our Blog</h4>
+                        <h2 class="stay-enjoy-h2 text-center">Our Recent Blog</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 ">
+                        <div class="card" >
+                            <img src="./img_3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-4">
+                                <h4 class="Stay-room-h4 ">Rooms</h4>
+                                <h5 class="card-title mt-3"><span
+                                        class="border-top border-1 pt-2 border-black">New</span> Rooms</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+                                    deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.
+                                </p>
+                                <a href="#" class="btn border rounded-0 border-2 learn-btn px-4 py-2 mt-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" col-lg-4 col-md-6">
+                        <div class="card" >
+                            <img src="./img_6.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-4">
+                                <h4 class="Stay-room-h4 ">News</h4>
+                                <h5 class="card-title mt-3"><span
+                                        class="border-top border-1 pt-2 border-black">New</span>Staff Added</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+                                    deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.
+                                </p>
+                                <a href="#" class="btn border rounded-0 border-2 learn-btn px-4 py-2 mt-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card" >
+                            <img src="./img_5.jpg" class="card-img-top" alt="...">
+                            <div class="card-body px-4">
+                                <h4 class="Stay-room-h4 "> New Rooms</h4>
+                                <h5 class="card-title mt-3"><span
+                                        class="border-top border-1 pt-2 border-black">Big</span> Rooms for All</h5>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum
+                                    deserunt illo quis similique dolore voluptatem culpa voluptas rerum, dolor totam.
+                                </p>
+                                <a href="#" class="btn border rounded-0 border-2 learn-btn px-4 py-2 mt-3">Read more</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="site-footer">
 
         <div class="container">
-            <div class="inner-content">
-                <div class="left-content">
-                    <h1 class="introduction">Introduction To</h1>
-
-                    <h1 class="introduction">Jawan Pakistan</h1>
-                    <br>
-                    <p class="paragraph">The foundation of every state is the education and skills set of its youth.
-                        Jawan
-                        Pakistan is such an
-                        organization of Pakistan who is not only working on youth education but also enhancing skills
-                        set in
-                        youth
-                        either Free of cost or in a very low cost. This initiative, initially developed by a single
-                        person
-                        and with
-                        almost no seed capital, promotes entrepreneurship and innovation and Sustainable Development
-                        Goal,
-                        which
-                        promotes inclusive and sustainable economic growth.</p>
-
-
+            <div class="row mb-5">
+                <div class="col-md-4">
+                    <h3>Phone Support</h3>
+                    <p>24/7 Call us now.</p>
+                    <p class="lead"><a class="contact-num" href="tel://">+ 1 332 3093 323</a></p>
                 </div>
-                <div class="right-content"> <img class="introduction-image" src="https://jawanpakistan12.web.app/images/1.png"
-                        alt=""></div>
-
-            </div>
-
-        </div>
-
-
-
-
-    </section>
-
-    <section>
-
-        <div class="mission">
-            <div class="container ">
-                <div class="inner-content">
-                    <div class="left-content">
-                        <img class="visionleftimage" src="https://jawanpakistan12.web.app/images/2.png" alt="">
-                    </div>
-                    <div class="right-content">
-                        <h1 class="introduction">Mission And Vision </h1>
-                        <h1 class="introduction"> Behind Jawan Pakistan</h1>
-
-                        <p class="paragraph">Our vision is to bring our students into the 21st century through
-                            innovation
-                            and
-                            modern
-                            technology. To
-                            create a better every day life for every people. This program is not only impacting the
-                            youth in
-                            monetary perspective but it is also creating some deep-rooted, long-term psychological
-                            effects
-                            e.g.
-                            minimizing frustration among the unemployed youth.</p>
-                        <br>
-                        <p class="paragraph">Our mission is to provide high quality education that connects young people
-                            with
-                            opportunities to
-                            transform their lives. The educated youngsters who remain unemployed gets frustrated,
-                            depressed
-                            and
-                            disheartened when they do not succeed in getting their dream jobs. This training reinforces
-                            the
-                            educated
-                            youth to earn well through freelancing, develop variety of skills through specified domains
-                            and
-                            promote
-                            entrepreneurial culture that diverts youths potentials for constructive purposes. This
-                            energy
-                            diversion
-                            definitely make the youth more confident, self-reliant and constructive asset for a
-                            progressing
-                            economy.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <section>
-
-        <div class="founder-section text-center">
-            <div class="">
-                <div class="founder ">
-                    <img class="founder-image" src="https://jawanpakistan12.web.app/images/image.jpg" alt="">
-                </div>
-                <div class="image-underline"> </div>
-                <div class="founder-content">
-                    <h1 class="founder-name">
-                        MUHAMMAD ALI MUGHAL
-                    </h1>
-                </div>
-                <p class="color">Founder of Jawan Pakistan
-
-                </p>
-                <img class="invertidcoma" src="./102571-removebg-preview.png" alt="">
-                <div class="founder-Intro">
-                    <p>We aim to be most efficient provider of business process outsourcing services by setting the
-                        industry
-                        standards for cost and quality of services. Our long term success will be driven by our
-                        relentless
-                        focus on recruiting and developing the most talented pool of human capital in our industry.
-
+                <div class="col-md-4">
+                    <h3>Connect With Us</h3>
+                    <p>We are socialized. Follow us</p>
+                    <p>
+                        <a href="#" class="pl-0 p-3"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" class="p-3"><i class="fa-brands fa-twitter"></i></i></a>
+                        <a href="#" class="p-3"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="p-3"><i class="fa-brands fa-vimeo-v"></i></a>
+                        <a href="#" class="p-3"><i class="fa-brands fa-youtube"></i></a>
                     </p>
                 </div>
-            </div>
-        </div>
+                <div class="col-md-4">
+                    <h3>Connect With Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime, odio.</p>
+                    <form action="#" class="subscribe">
+                        <div class="form-group">
+                            <button class="border-0 submit-btn" type="submit"><i class="fa-solid fa-arrow-right "></i></button>
+                            <input type="email" class="form-control" placeholder="Enter email">
+                        </div>
 
-    </section>
-
-    <section>
-        <div class="container">
-            <div class="cards-section">
-                <div class="development-card">
-                    <div > <img class="development-image"
-                            src="https://t3.ftcdn.net/jpg/02/14/53/92/360_F_214539232_YnUrtuwUEt84gHuU0qG8l7OwZvH4rnPG.jpg"
-                            alt=""></div>
-                    <div class="development-text">Web and Mobile Application Development</div>
-                </div>
-                <div class="development-card">
-                    <div > <img class="development-image"
-                            src="https://th.bing.com/th/id/OIP.DIvOQYEHNTTBxwidRpU2-QHaEK?rs=1&pid=ImgDetMain"
-                            alt=""></div>
-                    <div class="development-text">Flutter Mobile Application Development</div>
-                </div>
-                <div class="development-card">
-                    <div > <img class="development-image"
-                            src="https://swathysivakumaar.com/wp-content/uploads/2019/07/6_Photography-Graphic-Design-Video-Editing.png"
-                            alt=""></div>
-                    <div class="development-text">Graphic Design And Video Editing</div>
-                </div>
-                <div class="development-card">
-                    <div > <img class="development-image"
-                            src="https://th.bing.com/th/id/R.e62149ff7f54d8475067a68165efd7ab?rik=ENroDqIDyf7Jmw&pid=ImgRaw&r=0"
-                            alt=""></div>
-                    <div class="development-text">Digital And Social Media Marketing</div>
-                </div>
-                <div class="development-card">
-                    <div > <img class="development-image"
-                            src="https://th.bing.com/th/id/OIP.H6EtGVnig0jrneEDFwLLwgHaE7?rs=1&pid=ImgDetMain"
-                            alt=""></div>
-                    <div class="development-text">BlockChain Development</div>
+                    </form>
                 </div>
             </div>
+
+
+
         </div>
-    </section>
 
-
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
